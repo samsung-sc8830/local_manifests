@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- SC8830 Repo -->
+	<remote name="sc8830" fetch="https://github.com/samsung-sc8830" revision="android-7.1"/>
+
+	<!-- Common tree -->
+	<project path="device/samsung/sc8830-common" name="twrp_device_samsung_sc8830-common" remote="sc8830"/>
+
+	<!-- Devices -->
+	<project path="device/samsung/gtel3g" name="twrp_device_samsung_gtel3g" remote="sc8830"/>
+	<project path="device/samsung/goyave" name="twrp_device_samsung_goyave" remote="sc8830"/>
+	<project path="device/samsung/grandneove3g" name="twrp_device_samsung_grandneove3g" remote="sc8830"/>
+</manifest>
