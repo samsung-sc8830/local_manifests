@@ -1,13 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> <!--
+     Copyright (C) 2016 The Android Open Source Project
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <manifest>
-	<!-- SC8830 Repo -->
-	<remote name="sc8830" fetch="https://github.com/samsung-sc8830" revision="android-7.1"/>
-
-	<!-- Common tree -->
-	<project path="device/samsung/sc8830-common" name="twrp_device_samsung_sc8830-common" remote="sc8830"/>
-
-	<!-- Devices -->
-	<project path="device/samsung/gtel3g" name="twrp_device_samsung_gtel3g" remote="sc8830"/>
-	<project path="device/samsung/goyave" name="twrp_device_samsung_goyave" remote="sc8830"/>
-	<project path="device/samsung/grandneove3g" name="twrp_device_samsung_grandneove3g" remote="sc8830"/>
+	<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1"/>
+	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/sprd-common" name="gtel3g/android_device_samsung_sprd-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/scx30g-common" name="gtel3g/android_device_samsung_scx30g-common" remote="github" revision="lineage-14.1-gtel3g"/>
+	<project path="device/samsung/scx35-common" name="gtel3g/android_device_samsung_scx35-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/gtel3g" name="samsung-sc8830/android_device_samsung_gtel3g" remote="github" revision="lineage-14.1-gtel3g"/>
+	<project path="hardware/sprd" name="gtel3g/android_hardware_sprd" remote="github" revision="cm-14.1"/>
+	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/gtel3g" name="gtel3g/kernel_samsung_gtel3g" remote="github" revision="master"/>
+	<project path="vendor/samsung/gtel3g" name="samsung-sc8830/android_vendor_samsung_gtel3g" remote="github" revision="lineage-14.1-gtel3g"/>
+	<project path="vendor/samsung/scx30g-common" name="samsung-sc8830/android_vendor_samsung_scx30g-common" remote="github" revision="lineage-14.1-gtel3g"/>
 </manifest>
